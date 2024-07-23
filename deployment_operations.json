@@ -1,0 +1,99 @@
+[
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/8D021E82B15D5E47",
+    "operationId": "8D021E82B15D5E47",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:50:13.365762Z",
+      "duration": "PT17.3792378S",
+      "trackingId": "0e834a7a-fb53-4fd5-8e60-17b6b0957e8f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Compute/virtualMachines/ubuntu1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "ubuntu1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/F7A80B41E0FAF478",
+    "operationId": "F7A80B41E0FAF478",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:49:56.2987774Z",
+      "duration": "PT0.3122532S",
+      "trackingId": "43d5145c-ec91-463e-9f13-a4a531fbe1d8",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkInterfaces/ubuntu1623_z1",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "ubuntu1623_z1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/0F25E2C70BA2D2D0",
+    "operationId": "0F25E2C70BA2D2D0",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:49:55.4405325Z",
+      "duration": "PT3.4824473S",
+      "trackingId": "26a38d80-3bac-4fcc-8e18-01e95199eef2",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/virtualNetworks/ubuntu1-vnet",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "ubuntu1-vnet"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/7A4E5DFDFE3C7C31",
+    "operationId": "7A4E5DFDFE3C7C31",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:49:55.9303616Z",
+      "duration": "PT3.9722764S",
+      "trackingId": "3e8a6eb9-38fc-4e95-85be-def969a3672a",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/publicIpAddresses/ubuntu1-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "ubuntu1-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/9FF3082FB409A779",
+    "operationId": "9FF3082FB409A779",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:49:54.0584631Z",
+      "duration": "PT2.1003779S",
+      "trackingId": "d26b4097-6733-46f8-bad6-d9ae600a8d7d",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkSecurityGroups/ubuntu1-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "ubuntu1-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134/operations/08584802458940507067",
+    "operationId": "08584802458940507067",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2024-07-19T03:50:13.6579612Z",
+      "duration": "PT17.671437S",
+      "trackingId": "3f9f7826-933d-46ea-bddc-0fde713a1774",
+      "statusCode": "OK"
+    }
+  }
+]

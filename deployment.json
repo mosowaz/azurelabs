@@ -1,0 +1,269 @@
+{
+  "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Resources/deployments/CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134",
+  "name": "CreateVm-canonical.ubuntu-24_04-lts-server-20240718233134",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourcegroups/Compute-Network/providers/Microsoft.Compute/virtualMachines/ubuntu1",
+    "marketplaceItemId": "Microsoft.VirtualMachine-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "9017565412483170263",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "canadacentral"
+      },
+      "networkInterfaceName1": {
+        "type": "String",
+        "value": "ubuntu1623_z1"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "ubuntu1-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "SSH",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          },
+          {
+            "name": "HTTPS",
+            "properties": {
+              "priority": 320,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443"
+            }
+          },
+          {
+            "name": "HTTP",
+            "properties": {
+              "priority": 340,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "ubuntu1-vnet"
+      },
+      "addressPrefixes": {
+        "type": "Array",
+        "value": [
+          "10.0.0.0/16"
+        ]
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      },
+      "publicIpAddressName1": {
+        "type": "String",
+        "value": "ubuntu1-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Static"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "pipDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "ubuntu1"
+      },
+      "virtualMachineName1": {
+        "type": "String",
+        "value": "ubuntu1"
+      },
+      "virtualMachineComputerName1": {
+        "type": "String",
+        "value": "ubuntu1"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "Compute-Network"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "osDiskDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B1s"
+      },
+      "nicDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "hibernationEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      },
+      "adminPublicKey": {
+        "type": "SecureString"
+      },
+      "virtualMachine1Zone": {
+        "type": "String",
+        "value": "1"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2024-07-19T03:50:13.8881149Z",
+    "duration": "PT22.3343487S",
+    "correlationId": "7ef30f33-d45d-4ae9-b77b-a0900561356a",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "canadacentral"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "canadacentral"
+            ]
+          },
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "canadacentral"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "canadacentral"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "canadacentral"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkSecurityGroups/ubuntu1-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "ubuntu1-nsg"
+          },
+          {
+            "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/virtualNetworks/ubuntu1-vnet",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "ubuntu1-vnet"
+          },
+          {
+            "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/publicIpAddresses/ubuntu1-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "ubuntu1-ip"
+          }
+        ],
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkInterfaces/ubuntu1623_z1",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "ubuntu1623_z1"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkInterfaces/ubuntu1623_z1",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "ubuntu1623_z1"
+          }
+        ],
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Compute/virtualMachines/ubuntu1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "ubuntu1"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Compute/virtualMachines/ubuntu1"
+      },
+      {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkInterfaces/ubuntu1623_z1"
+      },
+      {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/networkSecurityGroups/ubuntu1-nsg"
+      },
+      {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/publicIpAddresses/ubuntu1-ip"
+      },
+      {
+        "id": "/subscriptions/1aee2a43-227e-4c4e-8c2a-26293b290b85/resourceGroups/Compute-Network/providers/Microsoft.Network/virtualNetworks/ubuntu1-vnet"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
