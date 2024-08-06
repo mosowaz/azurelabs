@@ -1,4 +1,5 @@
 ## Creating a VM with az cli
+'''
 $ az vm create \
  --resource-group "test-resource" \
  --name test-vm \
@@ -12,7 +13,7 @@ $ az vm create \
  --admin-password <password> \
  --no-wait \
  --generate-ssh-keys 
- 
+''' 
 
 ## create resource group 
 az group create --name mylab --location canadacentral --account "Free trial"
