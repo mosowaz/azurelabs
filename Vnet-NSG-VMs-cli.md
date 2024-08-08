@@ -1,8 +1,8 @@
 
-###Create a resource group
+### Create a resource group
 ```az group create --name test-rg --location canadacentral```
 
-###Create a virtual network and subnet
+### Create a virtual network and subnet
 ```
 az network vnet create \
     --name vnet-1 \
