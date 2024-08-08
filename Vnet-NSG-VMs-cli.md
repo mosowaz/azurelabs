@@ -34,3 +34,26 @@ az network bastion create \
     --vnet-name vnet-1 \
     --location eastus2
 ```
+
+### 4. Create 2 Linux VMs for test in the subnet-1 subnet
+```
+az vm create \
+    --resource-group test-rg \
+    --admin-username azureuser \
+    --authentication-type password \
+    --name vm-1 \
+    --image Ubuntu2204 \
+    --public-ip-address ""
+
+az vm create \
+    --resource-group test-rg \
+    --admin-username azureuser \
+    --authentication-type password \
+    --name vm-2 \
+    --image Ubuntu2204 \
+    --public-ip-address ""
+```
+
+## Clean up resources
+```az group delete --name test-rg --yes```
+
