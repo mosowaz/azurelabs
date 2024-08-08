@@ -40,18 +40,22 @@ az network bastion create \
 az vm create \
     --resource-group test-rg \
     --admin-username azureuser \
-    --authentication-type password \
+    --generate-ssh-keys \
+    --authentication-type ssh \
     --name vm-1 \
     --image Ubuntu2204 \
     --public-ip-address ""
+    --no-wait \
 
 az vm create \
     --resource-group test-rg \
     --admin-username azureuser \
-    --authentication-type password \
+    --generate-ssh-keys \
+    --authentication-type ssh \
     --name vm-2 \
     --image Ubuntu2204 \
     --public-ip-address ""
+    --no-wait \
 ```
 
 ## Clean up resources
