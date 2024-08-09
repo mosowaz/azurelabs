@@ -45,7 +45,7 @@ az vm create \
     --name vm-1 \
     --image Ubuntu2204 \
     --public-ip-address ""
-    --no-wait \
+    --no-wait 
 
 az vm create \
     --resource-group test-rg \
@@ -55,7 +55,7 @@ az vm create \
     --name vm-2 \
     --image Ubuntu2204 \
     --public-ip-address ""
-    --no-wait \
+    --no-wait 
 ```
 
 ## Clean up resources
